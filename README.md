@@ -1,1 +1,11 @@
 <h1 align="center">Python-code-center</h1>
+
+## List Code 
+
+### Discord
+* basic alert to discord
+* Check the price of the top 10 cryptocurrencies on the coingecko to discord.
+* rss feed any website to discord
+
+### Telegrams
+* basic alert to telegrams
