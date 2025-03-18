@@ -8,4 +8,4 @@
 * rss feed any website to discord
 
 ### Telegrams
-* basic alert to telegrams
+* [basic alert to telegrams...](/python%20basic%20alert%20telegrams.txt)
