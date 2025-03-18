@@ -9,3 +9,11 @@
 
 ### Telegrams
 * [basic alert to telegrams...](/python%20basic%20alert%20telegrams.txt)
+
+
+### Mikrotik
+* [basic connect mikrotik API...]
+
+
+### RSS Feed News
+*[basic get rss feed from any website...]
