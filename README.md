@@ -3,7 +3,7 @@
 ## List Code 
 
 ### Discord
-* basic alert to discord
+* [basic alert to discord...](/python basic alert discord.txt)
 * [Check the price of the top 10 cryptocurrencies on the coingecko to discord...](/crypto%20price%20to%20discord.txt)
 * rss feed any website to discord
 
