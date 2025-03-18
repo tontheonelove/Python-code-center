@@ -1,0 +1,27 @@
+import requests
+
+# ใส่ Token ของ Bot ที่คุณได้จาก BotFather
+TOKEN = 'XXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+# ใส่ Chat ID ของผู้ที่ต้องการส่งข้อความไป (คุณสามารถใช้ @userinfobot เพื่อหาค่า chat_id ได้)
+chat_id = 'XXXXXXXXXX'
+
+# ข้อความที่ต้องการส่ง
+message = 'Hello! This is a basic notification from your Python bot!'
+
+# URL สำหรับส่งข้อความ
+url = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
+
+# พารามิเตอร์ที่ต้องการส่ง
+params = {
+    'chat_id': chat_id,
+    'text': message
+}
+
+# ส่งข้อความ
+response = requests.post(url, params=params)
+
+# เช็คผลลัพธ์การส่ง
+if response.status_code == 200:
+    print("Message sent successfully")
+else:
+    print(f"Failed to send message. Status code: {response.status_code}")
