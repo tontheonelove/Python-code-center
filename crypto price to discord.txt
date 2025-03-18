@@ -15,7 +15,7 @@ def get_top_10_cryptos():
 
 # ฟังก์ชั่นเพื่อส่งข้อมูลไปยัง Discord Webhook
 def send_to_discord(cryptos):
-    webhook_url = "https://discordapp.com/api/webhooks/1351404617224945684/xbXOzb-PvEHxr4cr_m-RfjNXZ_BBs7zZ14wgMjSZxa0dHjwJUwGUGCGj61nc9z7Vw6BF"  # ใส่ Webhook URL ของ Discord ที่นี่
+    webhook_url = "https://discord.com/api/webhooks/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx""  # ใส่ Webhook URL ของ Discord ที่นี่
 
     # สร้างข้อความที่จะแสดงใน Discord
     message = "💥 Top 10 Cryptocurrencies by Market Cap 💥\n\n"
