@@ -1,0 +1,17 @@
+import feedparser
+
+# URL ของ RSS Feed ที่คุณต้องการดึงข้อมูล
+rss_url = 'https://cointelegraph.com/rss'
+
+# ดึงข้อมูลจาก RSS Feed
+feed = feedparser.parse(rss_url)
+
+# แสดงชื่อของ Feed
+print(f"Feed Title: {feed.feed.title}\n")
+
+# แสดงข้อมูลของแต่ละ entry (ข่าว หรือโพสต์)
+for entry in feed.entries:
+    print(f"Title: {entry.title}")
+    print(f"Link: {entry.link}")
+    print(f"Published: {entry.published}")
+    print(f"Summary: {entry.summary}\n")
