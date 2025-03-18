@@ -1,0 +1,39 @@
+import requests
+import json
+
+# ฟังก์ชั่นเพื่อดึงข้อมูลจาก CoinGecko API
+def get_top_10_cryptos():
+    url = "https://api.coingecko.com/api/v3/coins/markets"
+    params = {
+        "vs_currency": "usd",  # สกุลเงินที่ต้องการ (USD)
+        "order": "market_cap_desc",  # เรียงตามมูลค่าตลาดจากมากไปหาน้อย
+        "per_page": 10,  # ดึงข้อมูล 10 อันดับแรก
+        "page": 1  # หน้าแรก
+    }
+    response = requests.get(url, params=params)
+    return response.json()
+
+# ฟังก์ชั่นเพื่อส่งข้อมูลไปยัง Discord Webhook
+def send_to_discord(cryptos):
+    webhook_url = "https://discordapp.com/api/webhooks/1351404617224945684/xbXOzb-PvEHxr4cr_m-RfjNXZ_BBs7zZ14wgMjSZxa0dHjwJUwGUGCGj61nc9z7Vw6BF"  # ใส่ Webhook URL ของ Discord ที่นี่
+
+    # สร้างข้อความที่จะแสดงใน Discord
+    message = "💥 Top 10 Cryptocurrencies by Market Cap 💥\n\n"
+    for idx, crypto in enumerate(cryptos, start=1):
+        message += f"{idx}. {crypto['name']} ({crypto['symbol'].upper()})\n"
+        message += f"   Price: ${crypto['current_price']}\n"
+        message += f"   Market Cap: ${crypto['market_cap']}\n"
+        message += f"   24h Change: {crypto['price_change_percentage_24h']}%\n\n"
+
+    # ส่งข้อมูลไปยัง Discord
+    data = {"content": message}
+    response = requests.post(webhook_url, data=json.dumps(data), headers={"Content-Type": "application/json"})
+
+    if response.status_code == 204:
+        print("Message successfully sent to Discord!")
+    else:
+        print(f"Failed to send message: {response.status_code}")
+
+# ดึงข้อมูลและส่งไปยัง Discord
+cryptos = get_top_10_cryptos()
+send_to_discord(cryptos)
