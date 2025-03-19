@@ -28,4 +28,4 @@
 * [Check Price Top 10 Crypto ..](/crypto%20price%20check%20top%2010.md)
 
 ### ETC
-* [create random password 16 digit...]()
+* [create random password 16 digit...](create%20random%20password%2010digit.md)
