@@ -1,13 +1,13 @@
 ## Check top 10 crypto price 
 
 
-- 1.Install the requests library if it is not already installed
+- Install the requests library if it is not already installed
 ```
 pip install requests
 ```
 
 
-- 2. โค้ด Python สำหรับดึงข้อมูล
+- โค้ด Python สำหรับดึงข้อมูล
 ```
 import requests
 
