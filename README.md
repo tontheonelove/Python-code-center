@@ -20,8 +20,8 @@
 * [get rss feed and run on webpage...](/get%20rss%20feed%20and%20deploy%20webpage.md)
 
 ### Network
-* [Port Scanner (TCP)...](python%20scan%20tcp%20network%20all%20port.md)
-* [Check IP Address...](python%20check%20ip%20address.md)
+* [Port Scanner (TCP)...](/python%20scan%20tcp%20network%20all%20port.md)
+* [Check IP Address...](/python%20check%20ip%20address.md)
 
 ### Crypto
-* [Check Bitcoin price from 3 Exchange...]()
+* [Check Bitcoin price from 3 Exchange...](/check%20bitcoin%20price%20from%203%20exchange.md)
