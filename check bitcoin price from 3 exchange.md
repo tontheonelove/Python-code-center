@@ -1,13 +1,13 @@
 # Check Bitcoin prices from 3 different exchanges: Binance, Coinbase, and Kraken.
 
 - 1. Install required libraries: You need to install the requests library first. If it is not installed, you can install it with the command:
-
+```
 pip install requests
-
+```
 - 2. Code to check Bitcoin price from 3 exchanges: This code uses the API of Binance, Coinbase, and Kraken to compare Bitcoin price data
  
 ## python Code
-
+```
 import requests
 
 # ฟังก์ชันเพื่อดึงข้อมูลราคาจาก Binance
@@ -58,7 +58,7 @@ def compare_prices():
 
 # เรียกใช้งานฟังก์ชัน
 compare_prices()
-
+```
 
 ### Description:
 - Binance API: Use https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT to fetch the price of Bitcoin (BTC) against USDT (Tether), a digital dollar.
