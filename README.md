@@ -25,3 +25,4 @@
 
 ### Crypto
 * [Check Bitcoin price from 3 Exchange...](/check%20bitcoin%20price%20from%203%20exchange.md)
+* [Check Price Top 10 Crypto ..](/crypto%20price%20check%20top%2010.md)
