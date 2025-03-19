@@ -22,3 +22,6 @@
 ### Network
 * [Port Scanner (TCP)...](python%20scan%20tcp%20network%20all%20port.md)
 * [Check IP Address...](python%20check%20ip%20address.md)
+
+### Crypto
+* [Check Bitcoin price from 3 Exchange...]()
