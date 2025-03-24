@@ -30,4 +30,4 @@
 ### ETC
 * [create random password 16 digit...](create%20random%20password%2010digit.md)
 * [create random username 10 user](create%20random%20user.md)
-* [python randomly generate 10 fake emails]()
+* [python randomly generate 10 fake emails](random%20fake%20email.md)
