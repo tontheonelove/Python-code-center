@@ -29,4 +29,4 @@
 
 ### ETC
 * [create random password 16 digit...](create%20random%20password%2010digit.md)
-* [create random username 10 user]()
+* [create random username 10 user](create%20random%20user.md)
